@@ -15,7 +15,6 @@ for (let y in lines) {
     let numberMatch;
 
     while (numberMatch = numberRegex.exec(lines[y])) {
-        console.log(numberMatch[0])
         let isPart = false;
         for (let x = numberMatch.index; x < numberMatch.index + numberMatch[0].length; x++) {
             if (
