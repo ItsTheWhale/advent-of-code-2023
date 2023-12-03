@@ -40,29 +40,3 @@ for (let y in lines) {
 }
 
 console.log(sum);
-
-// const symbolRegex = /[^\.0-9]/;
-
-// for (let y in chars) {
-//     y = Number(y);
-//     for (let x in chars[y]) {
-//         x = Number(x);
-//         if (chars[y][x] === '.' || isNaN(Number(chars[y][x]))) continue;
-
-//         if (
-//             (y > 0 && (chars[y - 1][x].match(symbolRegex)
-//                 || (x > 0 && chars[y - 1][x - 1].match(symbolRegex))
-//                 || (x < chars[y - 1].length - 2 && chars[y - 1][x + 1].match(symbolRegex)))
-//             )
-//             || (x > 0 && chars[y][x - 1].match(symbolRegex))
-//             || (x < chars[y].length - 2 && chars[y][x + 1].match(symbolRegex))
-//             || (y < chars.length - 2 && (chars[y + 1][x].match(symbolRegex)
-//                 || (x > 0 && chars[y + 1][x - 1].match(symbolRegex))
-//                 || (x < chars[y + 1].length - 2 && chars[y + 1][x + 1].match(symbolRegex)))
-//             )
-//         ) {
-//             console.log(chars[y][x] + 'adjacent');
-
-//         }
-//     }
-// }
